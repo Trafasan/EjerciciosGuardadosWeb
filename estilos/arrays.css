@@ -1,0 +1,7 @@
+article {
+    flex: 30%;
+}
+
+#resultados article{
+    flex: 25%;
+}

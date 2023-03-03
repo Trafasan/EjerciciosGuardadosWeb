@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Repositorio web: Apartados extra">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Sandra Requena">
+    <title>Repositorio web: Apartados extra</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/extra.css">
+    <script src="../scripts/extra.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" target="_self" class="cambioColor">Inicio</a>
+        <a href="arrays.html" target="_self" class="cambioColor">Arrays</a>
+        <a href="formularios.html" target="_self" class="cambioColor">Formularios</a>
+        <a href="funciones.html" target="_self" class="cambioColor">Funciones</a>
+        <a href="tablas.html" target="_self" class="cambioColor">Tablas</a>
+        <p class="actual">Apartados extra</p>
+    </nav>
+    <div>
+        <article>
+            <h2>Apartado extra 1</h2>
+            <p>
+                Crea una página que tenga un número de párrafos y al final que tenga un botón que al pulsar
+                sobredicho botón los párrafos que ocupan las posiciones impares tendrán un fondo de un color y los párrafos pares de
+                otro color.<br>
+                <b>Nota:</b> Cuando se cambie el color debe cambiarse el botón para poder revertir los cambios.
+            </p>
+        </article>
+        <article>
+            <h2>Apartado extra 2</h2>
+            <p>
+                Crea dos input de tipo password y un botón, el cual solo se podrá pulsar una vez que se haya introducido
+                la misma contraseña en ambos input. El botón imprimirá la contraseña en la web.<br>
+                <b>Nota:</b> No es necesario que los input sean de tipo password, pero es la opción más
+                lógica ya que en casi todos los sitios web piden la contraseña y luego piden confirmarla.
+            </p>
+        </article>
+        <article>
+            <h2>Apartado extra 3</h2>
+            <p>
+                Crea un input de tipo date que representa la fecha de nacimiento. En este input solo se podrá introducir las fechas
+                de nacimiento de las personas mayores de edad.<br>
+                <b>Nota:</b> El valor por defecto será la fecha limitante, es decir, la fecha de nacimiento de aquellas personas
+                que acaban de cumplir la mayoría de edad.
+            </p>
+        </article>
+        <article>
+            <h2>Apartado extra 4</h2>
+            <p>
+                Crea un botón que, al pulsarlo, muestre una ventana previamente oculta. <b>Esta ventana no estará sujeta a su
+                apartado de resultados, sino que se encontrará en la esquina inferior derecha de la pantalla.</b><br>
+                <b>Nota:</b> La ventana estará oculta por CSS, por lo que esta propiedad debe cambiarse utilizando JavaScript.
+            </p>
+        </article>
+    </div>
+    <div id="resultados">
+        <article>
+            <h2>Resultado extra 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" name="ejercicio1">Pruébalo</button><button type="button" name="revertirEj1">Revertir</button></h2>
+            <div id="resultado1">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere a ad nulla delectus eligendi corrupti.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, nesciunt ullam molestiae autem aspernatur id.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officia modi voluptates natus vero inventore?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum veniam eveniet quibusdam esse! Dolore, voluptas?
+                </p>
+            </div>
+        </article>
+        <article>
+            <h2>Resultado extra 2</h2>
+            <div id="resultado2">
+                <p>
+                    <label for="password">
+                        Contraseña: <input type="password" id="password" name="password" placeholder="Contraseña" required autocomplete="off">
+                    </label>
+                </p>
+                <p>
+                    <label for="c_password">
+                        Confirme la contraseña: <input type="password" id="c_password" name="password" placeholder="Contraseña" required autocomplete="off">
+                    </label>
+                </p>
+                <button type="button" name="ejercicio2">Pruébalo</button>
+            </div>
+        </article>
+        <article>
+            <h2>Resultado extra 3</h2>
+            <div id="resultado3">
+                <label for="birth_date">
+                    Fecha de nacimiento: <input type="date" name="birth_date" id="birth_date">
+                </label>
+                <p>
+                    <b>Apunte:</b> En la función para limitar la fecha de nacimiento, se ha creado la constante que representa la
+                    mayoría de edad. En este caso, la mayoría de edad es a los 18, pero si se quiere cambiar, se puede acceder
+                    fácilmente a la constante en el archivo JS.
+                </p>  
+            </div>
+        </article>
+        <article>
+            <h2>Resultado extra 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" name="ejercicio4">Pruébalo</button></h2>
+            <div id="resultado4">
+                <div class="contenedor">
+                    <div id="cerrar">X</div>
+                    <div class="centrar">
+                        <img src="../images/icono_github.png" alt="Icono GitHub">
+                        <h1>&nbsp;Ventana oculta</h1>
+                    </div>
+                    <div>
+                        <p id="mensaje">
+                            Este ha sido el último ejercicio de mi repositorio web. Muchas gracias por haberlo visitado.<br>
+                            Si quiere ver más trabajos míos, puede visitar mi GitHub. Allí encontrará todas mis andanzas en
+                            programación web, además de proyectos Java y Maven.
+                        </p>
+                        <a href="https://github.com/Trafasan" target="_blank">
+                            Acceder a mi GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</body>
+</html>

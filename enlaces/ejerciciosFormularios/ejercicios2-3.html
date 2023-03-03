@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Repositorio web: Formularios 2 y 3">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Sandra Requena">
+    <title>Repositorio web: Formularios 2 y 3</title>
+    <link rel="stylesheet" href="../../estilos/style.css">
+    <link rel="stylesheet" href="../../estilos/ejerciciosFormularios/ejercicios2-3.css">
+    <script src="../../scripts/ejerciciosFormularios/ejercicios2-3.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="../../index.html" target="_self" class="cambioColor">Inicio</a>
+        <a href="../arrays.html" target="_self" class="cambioColor">Arrays</a>
+        <a href="../formularios.html" target="_self" class="cambioColor">Formularios</a>
+        <a href="../funciones.html" target="_self" class="cambioColor">Funciones</a>
+        <a href="../tablas.html" target="_self" class="cambioColor">Tablas</a>
+        <a href="../extra.html" target="_self" class="cambioColor">Apartados extra</a>
+    </nav>
+    <div>
+        <article>
+            <h2>Ejercicio 2</h2>
+            <p>
+                Crear una página en la que se mostrarán una lista de elementos y dos botones:
+            </p>
+            <ul>
+                <li>
+                    <b>Añadir:</b> Al pulsarlo, se dará de alta un nuevo elemento en la lista y se solicitará el texto a introducir.
+                </li>
+                <li>
+                    <b>Eliminar:</b> Al pulsarlo, se eliminará el último nodo. La lista siempre tendrá al menos un nodo en ella.
+                </li>
+            </ul>
+            <p>
+                <b>Nota:</b> El texto del nuevo elemento se introducirá mediante un textarea, que estará dentro de un formulario.
+                Para que se introduzca el elemento, el usuario deberá enviar el formulario. Dicho formulario solo será visible cuando
+                se pulse el botón <b>Añadir</b> y se ocultará cuando se envíe el formulario.
+            </p>
+        </article>
+        <article>
+            <h2>Resultado del ejercicio 2</h2>
+            <p>Pulsa un botón para <button id="add">Añadir</button> o <button id="eliminar">Eliminar</button> un elemento a la lista.</p>
+            <div id="resultado2">
+                <ol>
+                    <li>Dato inicial</li>
+                    <li>Dato inicial</li>
+                    <li>Dato inicial</li>
+                    <li>Dato inicial</li>
+                </ol>
+                <form action="#" name="form2">
+                    <label>Introduzca el texto:
+                        <textarea name="texto"></textarea>
+                    </label>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </article>
+    </div>
+    <div>
+        <article>
+            <h2>Ejercicio 3</h2>
+            <p>Realiza una página web que contenga dos o más párrafos, contendrá también:</p>
+            <ul>
+                <li>Input de tipo text para introducir el id del párrafo a modificar</li>
+                <li>3 botones:
+                    <ul>
+                        <li><b>Agrandar:</b> Ampliará el tamaño del párrafo seleccionado en 0.05em hasta un máximo de 2em.</li>
+                        <li><b>Reducir:</b> Reducirá el tamaño del párrafo seleccionado en 0.05em hasta un mínimo de 0.9em.</li>
+                        <li><b>Original:</b> Restablecerá el tamaño al tamaño original.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                <b>Apunte:</b> El tamaño de la fuente predeterminado de los párrafos es 1em. Sin embargo, si se quiere sacar ese valor
+                mediante JavaScript, aparecerá vacío.
+            </p>
+        </article>
+        <article id="resultado3">
+            <h2>Resultado del ejercicio 3</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit praesentium id labore cupiditate dignissimos deserunt.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum voluptatum voluptates quisquam sapiente reiciendis voluptatem?
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto eos ipsam incidunt, error eligendi corporis?
+            </p>
+            <form action="#" name="form3">
+                <label>
+                    Id del párrafo: <input type="number" name="id_parrafo">
+                </label>
+                <button type="button" name="agrandar">Agrandar</button>
+                <button type="button" name="reducir">Reducir</button>
+                <button type="button" name="original">Original</button>
+            </form>
+        </article>
+    </div>
+</body>
+</html>

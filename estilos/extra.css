@@ -1,0 +1,78 @@
+article {
+    flex: 30%;
+}
+
+#resultados article{
+    flex: 20%;
+}
+
+#resultado4 {
+    display: none; /*Este display hace que la ventana no aparezca*/
+}
+
+/*Estilos para la ventana oculta*/
+.contenedor {
+    max-width: 300px;
+    padding: 10px;
+    background-color: rgb(207, 247, 243);
+    border-radius: 1cm;
+    /*Las siguientes tres propiedades hacen que la ventana oculta aparezca en la esquina inferior derecha*/
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/*Estilos para el div que sirve como "botón" de cerrar*/
+#cerrar {
+    background-color: rgb(141, 179, 189);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 100%;
+    opacity: 0.8;
+    float: right; /*Esto hace que el div aparezca a la derecha*/
+    cursor: pointer;
+    box-shadow: -5px 5px 5px rgba(141, 179, 189, 0.75);
+}
+
+.centrar{
+    display: flex;
+    align-items: center;
+}
+
+.centrar img{
+    height: 30px;
+}
+
+.contenedor div:last-child{
+    overflow: hidden; /*Esta propiedad hace que el contenido es recortado y no se muestran las barras de desplazamiento*/
+    background-color: rgba(211, 211, 211, 0.5);
+    border-radius: 1cm;
+    box-shadow: inset 5px 5px 5px rgba(128, 128, 128, 0.5);
+}
+
+#mensaje {
+    margin-left: 10px;
+}
+
+
+/*Estilos para el enlace que hace la función de botón*/
+#resultado4 a {
+    font-size: large;
+    text-decoration: none;
+    background-color: rgb(141, 179, 189);
+    color: white;
+    padding: 16px 20px;
+    border-radius: 1cm;
+    margin-bottom:10px;
+    opacity: 0.8;
+    float: right;
+    box-shadow: -5px 5px 5px rgba(141, 179, 189, 0.75);
+}
+
+#resultado4 a:hover, #cerrar:hover{
+    opacity: 1;
+}
+#resultado4 a:active, #cerrar:active{
+    position: relative;
+    top: 2px;
+}

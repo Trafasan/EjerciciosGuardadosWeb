@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description"
+        content="Ejercicios de iniciación de programación web refactorizados tras varios cursos de programación.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, TypeScript, Bootstrap, Bootswatch">
+    <meta name="author" content="Sandra Requena">
+    <meta name="title" property="og:title" content="InitProgWeb | Tablas">
+    <title>InitProgWeb | Tablas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/darkly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/tablas.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="."><img alt="InitProgWeb" src="img/InitProgWeb.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIPW"
+                aria-controls="navbarIPW" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarIPW">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href=".">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="arrays.html">Arrays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="funciones.html">Funciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tablas.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="extra.html">Apartados extra</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="offset-1 col-10 row g-0 my-4">
+        <div class="col-lg-5 card bg-primary my-auto">
+            <h4 class="card-header text-center">Ejercicio</h4>
+            <div class="card-body">
+                <div>Genera una tabla de horarios con las siguientes condiciones:</div>
+                <ul>
+                    <li>Los bordes colapsan en un único borde</li>
+                    <li>
+                        Todas las cabeceras tendrán el fondo gris. Habrá tres cabeceras:
+                        <ul>
+                            <li><b>Cabecera de curso:</b> La cabecera estará centrada y ocupará toda la fila</li>
+                            <li><b>Día de la semana</b></li>
+                            <li><b>Cabecera de franja horaria:</b> Las letras en esta cabezera serán de color gris oscuro</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Cada asignatura tendrá el mismo color de fondo, distinto al resto. En cada celda,
+                        deben aparecer estos datos:
+                        <ul>
+                            <li><b>Nombre de la asignatura:</b> El tamaño de la letra será 1.2em y debe aparecer en negrita</li>
+                            <li><b>Nombre de profesor:</b> Debe aparecer en cursiva y centrado</li>
+                            <li><b>Nombre del aula:</b> El tamaño de la letra será 0.8em y debe aparecer alineado a la derecha</li>
+                        </ul>
+                        Si una asignatura se da en dos horas seguidas, no tiene borde que la divida
+                    </li>
+                    <li>Las horas libres no tienen borde</li>
+                </ul>
+                <p>
+                    <b>Apunte:</b> La tabla se generará de dos maneras: en el archivo HTML y en el archivo JavaScript.
+                    El resultado en ambos casos debe ser el siguiente:
+                </p>
+                <img class="w-100" src="img/horario.png" alt="Tabla ejemplo">
+            </div>
+        </div>
+        <div class="offset-lg-2 col-lg-5">
+            <div class="card bg-success mb-3">
+                <h4 class="card-header text-center">Tabla creada en HTML</h4>
+                <div class="card-body overflow-auto">
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr class="table-light text-center">
+                                <th scope="col" colspan="6" class="text-black fw-bold">2-DAW</th>
+                            </tr>
+                            <tr class="table-light">
+                                <th scope="col"></th>
+                                <th scope="col" class="text-black fw-bold">Lunes</th>
+                                <th scope="col" class="text-black fw-bold">Martes</th>
+                                <th scope="col" class="text-black fw-bold">Miércoles</th>
+                                <th scope="col" class="text-black fw-bold">Jueves</th>
+                                <th scope="col" class="text-black fw-bold">Viernes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="table-light text-secondary text-center align-middle">15:00h - 15:55h</th>
+                                <td colspan="2" class="bg-white"></td>
+                                <td class="bg-warning text-black">
+                                    <div class="fw-bolder">DIW</div>
+                                    <div class="fst-italic text-center">Jordi</div>
+                                    <div class="text-end">LAB1</div>
+                                </td>
+                                <td colspan="2" class="bg-white"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-light text-secondary text-center align-middle">15:55h - 16:50h</th>
+                                <td rowspan="2" class="bg-warning text-black align-middle">
+                                    <div class="fw-bolder">DIW</div>
+                                    <div class="fst-italic text-center">Jordi</div>
+                                    <div class="text-end">LAB1</div>
+                                </td>
+                                <td colspan="2" class="bg-white"></td>
+                                <td class="bg-info text-black">
+                                    <div class="fw-bolder">DWC</div>
+                                    <div class="fst-italic text-center">Pepe</div>
+                                    <div class="text-end">Inf4</div>
+                                </td>
+                                <td class="bg-white"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="table-light text-secondary text-center align-middle">16:50h - 17:45h</th>
+                                <td class="bg-white"></td>
+                                <td class="bg-warning text-black align-middle">
+                                    <div class="fw-bolder">DIW</div>
+                                    <div class="fst-italic text-center">Jordi</div>
+                                    <div class="text-end">LAB1</div>
+                                </td>
+                                <td colspan="2" class="bg-white"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card bg-success mb-3">
+                <div class="h4 card-header d-flex align-items-center justify-content-around">
+                    <span class="px-1">Tabla creada con JavaScript</span>
+                    <button class="btn btn-outline-success" name="crear">Crear tabla</button>
+                    <button class="btn btn-outline-danger" name="eliminar">Eliminar tabla</button>
+                </div>
+                <div class="card-body">
+                    <div id="tablajs" class="card-text overflow-auto"></div>
+                    <div id="add" class="card-text">
+                        Aunque parezca que las dos tablas sean exactamente iguales, sus celdas tienen diferente tamaño.<br>
+                        Para comprobarlo, pulse en el siguiente botón:&nbsp;
+                        <button class="btn btn-secondary">Añadir márgenes</button>
+                    </div>
+                    <div id="remove" class="card-text">
+                        Como puede observar, los atributos colspan y rowspan de algunas celdas son diferentes.<br>
+                        Para volver a la vista anterior, pulse el siguiente botón:&nbsp;
+                        <button class="btn btn-danger">Quitar márgenes</button>
+                        <div class="fw-bold text-danger mt-2">Tiene que quitar los márgenes antes de poder eliminar la tabla.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

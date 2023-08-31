@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description"
+        content="Ejercicios de iniciación de programación web refactorizados tras varios cursos de programación.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, TypeScript, Bootstrap, Bootswatch">
+    <meta name="author" content="Sandra Requena">
+    <meta name="title" property="og:title" content="InitProgWeb | Formularios">
+    <title>InitProgWeb | Formularios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/darkly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="."><img alt="InitProgWeb" src="img/InitProgWeb.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIPW"
+                aria-controls="navbarIPW" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarIPW">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href=".">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="arrays.html">Arrays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="funciones.html">Funciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tablas.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="extra.html">Apartados extra</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="offset-1 col-10 row g-0 my-4">
+        <div class="col-lg-5 card bg-primary mb-3 my-lg-auto">
+            <div class="h4 card-header d-flex align-items-center justify-content-around">
+                <span class="px-1">Ejercicio 1</span>
+                <a class="btn btn-outline-success" href="formularios/ejercicio_1.html">Ir al formulario</a>
+            </div>
+            <div class="card-body">
+                <div>
+                    Crea una página html con un formulario para obtener información personal sobre un usuario,
+                    los campos a incluir son los siguientes:
+                </div>
+                <ol>
+                    <li>Nombre</li>
+                    <li>Dirección</li>
+                    <li>NIF, comprobar que el documento introducido sea correcto.</li>
+                    <li>Fecha de nacimiento con formato dd/mm/aaaa.</li>
+                    <li>Código postal (numérico)</li>
+                    <li>País, será una lista con 6 paises.</li>
+                    <li>Género, será un <i>radiobutton</i> con tres opciones.<br>
+                        Esta tercera opción se debe a que el usuario puede que no quiera decir su género por diversos motivos.</li>
+                    <li>Preferencias, tendrás 3 checkbox a elegir con tres colores.</li>
+                    <li>Teléfono de 9 dígitos y numérico.</li>
+                    <li>E-Mail</li>
+                    <li>Contraseña</li>
+                    <li>Verificación de la contraseña</li>
+                </ol>
+                <div>
+                    <b>Nota:</b> Todos los campos son requeridos excepto el de las preferencias. Esto se debe a que se debe pulsar
+                    obligatoriamente el checkbox que se requiere aunque se hayan pulsado otros.
+                </div>
+                <div>
+                    El formulario tendrá dos botones <i>Enviar</i> y <i>Borrar</i>, al pulsar <i>Enviar</i> la página mostrará la información
+                    que el usuario ha escrito. Para realizar el envío del formulario todos los campos deben de ser correctos.
+                    Los campos que no sean correctos aparecerán con el fondo rojo y no debe permitir el envío del formulario.
+                </div>
+            </div>
+        </div>
+        <div class="offset-lg-2 col-lg-5">
+            <div class="card bg-primary mb-3">
+                <div class="h4 card-header d-flex align-items-center justify-content-around">
+                    <span class="px-1">Ejercicio 2</span>
+                    <a class="btn btn-outline-success" href="formularios/ejercicio_2.html">Ir al formulario</a>
+                </div>
+                <div class="card-body">
+                    <div>Crear una página en la que se mostrarán una lista de elementos y dos botones:</div>
+                    <ul>
+                        <li>
+                            <b>Añadir:</b> Al pulsarlo, se dará de alta un nuevo elemento en la lista y se solicitará el texto
+                            a introducir.
+                        </li>
+                        <li>
+                            <b>Eliminar:</b> Al pulsarlo, se eliminará el último nodo. La lista siempre tendrá al menos un nodo
+                            en ella.
+                        </li>
+                    </ul>
+                    <div>
+                        <b>Nota:</b> El texto del nuevo elemento se introducirá mediante un <i>textarea</i>, que estará dentro de un formulario.
+                        Para que se introduzca el elemento, el usuario deberá enviar el formulario. Dicho formulario solo será visible cuando
+                        se pulse el botón <i>Añadir</i> y se ocultará cuando se envíe el formulario.
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-primary mb-3">
+                <div class="h4 card-header d-flex align-items-center justify-content-around">
+                    <span class="px-1">Ejercicio 3</span>
+                    <a class="btn btn-outline-success" href="formularios/ejercicio_3.html">Ir al formulario</a>
+                </div>
+                <div class="card-body">
+                    <div>Realiza una página web que contenga dos o más párrafos, contendrá también:</div>
+                    <ul>
+                        <li>Input de tipo text para introducir el id del párrafo a modificar</li>
+                        <li>3 botones:
+                            <ul>
+                                <li><b>Agrandar:</b> Ampliará el tamaño del párrafo seleccionado en 0.05em hasta un máximo de 2em.</li>
+                                <li>
+                                    <b>Reducir:</b> Reducirá el tamaño del párrafo seleccionado en 0.05em hasta un mínimo de 0.9em.
+                                </li>
+                                <li><b>Original:</b> Restablecerá el tamaño al tamaño original.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div>
+                        <b>Apunte:</b> El tamaño de la fuente predeterminado para los párrafos es 1em. Sin embargo, si se quiere
+                        sacar ese valor mediante JavaScript, aparecerá vacío.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

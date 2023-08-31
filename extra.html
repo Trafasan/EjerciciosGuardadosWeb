@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description"
+        content="Ejercicios de iniciación de programación web refactorizados tras varios cursos de programación.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, TypeScript, Bootstrap, Bootswatch">
+    <meta name="author" content="Sandra Requena">
+    <meta name="title" property="og:title" content="InitProgWeb | Apartados extra">
+    <title>InitProgWeb | Apartados extra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/darkly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/extra.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="."><img alt="InitProgWeb" src="img/InitProgWeb.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIPW"
+                aria-controls="navbarIPW" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarIPW">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href=".">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="arrays.html">Arrays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="funciones.html">Funciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tablas.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="extra.html">Apartados extra</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="offset-1 col-10 row g-0 my-4">
+        <div class="col-lg-5 card bg-primary mb-3">
+            <h4 class="card-header text-center">Ejercicio 1</h4>
+            <div class="card-body">
+                <div>
+                    Crea una página que tenga un número de párrafos y al final que tenga un botón que al pulsar
+                    sobredicho botón los párrafos que ocupan las posiciones impares tendrán un color
+                    y los párrafos pares otro color.
+                </div>
+                <div><b>Nota:</b> Cuando se cambie el color debe cambiarse el botón para poder revertir los cambios.</div>
+            </div>
+        </div>
+        <div class="offset-lg-2 col-lg-5 card bg-success mb-3">
+            <div class="h4 card-header d-flex align-items-center justify-content-around">
+                <span class="px-1">Resultado del ejercicio 1</span>
+                <button type="button" class="btn btn-outline-success" name="ejercicio1">Pruébalo</button>
+                <button class="btn btn-outline-danger" name="revertir">Revertir</button>
+            </div>
+            <div id="resultado1" class="card-body">
+                <div>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto inventore
+                    asperiores voluptates nisi tenetur sequi in nesciunt est tempora eveniet.
+                </div>
+                <div>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum a dolores
+                    molestiae eos dolorem. Quo quidem non dolore possimus sit.
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sit culpa
+                    inventore quas nulla ipsa saepe? Minus a autem molestias?
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, accusamus.
+                    Totam aliquam sapiente natus numquam doloribus ratione aspernatur soluta quisquam!
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 card bg-primary mb-3">
+            <h4 class="card-header text-center">Ejercicio 2</h4>
+            <div class="card-body">
+                <div>
+                    Crea dos input de tipo password y un botón, el cual solo se podrá pulsar una vez que se haya introducido
+                    la misma contraseña en ambos input. El botón imprimirá la contraseña en la web.
+                </div>
+                <div>
+                    <b>Nota:</b> No es necesario que los input sean de tipo password, pero es la opción más
+                    lógica ya que en casi todos los sitios web piden la contraseña y luego piden confirmarla.
+                </div>
+            </div>
+        </div>
+        <div class="offset-lg-2 col-lg-5 card bg-success mb-3">
+            <div class="h4 card-header d-flex align-items-center justify-content-around">
+                <span class="px-1">Resultado del ejercicio 2</span>
+                <button type="button" class="btn btn-outline-success" name="ejercicio2">Pruébalo</button>
+            </div>
+            <div id="resultado2" class="card-body">
+                <div class="d-flex form-group my-2">
+                  <label class="form-label fw-bold my-auto">Contraseña:</label>&nbsp;&nbsp;
+                  <input type="password" class="form-control" name="password" placeholder="Contraseña"
+                  required autocomplete="off">
+                </div>
+                <div class="d-flex form-group my-2">
+                  <label class="form-label fw-bold my-auto">Confirme la contraseña:</label>&nbsp;&nbsp;
+                  <input type="password" class="form-control" name="c_password" placeholder="Contraseña"
+                  required autocomplete="off">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 card bg-primary mb-3">
+            <h4 class="card-header text-center">Ejercicio 3</h4>
+            <div class="card-body">
+                <div>
+                    Crea un input de tipo date que representa la fecha de nacimiento. En este input solo se podrá introducir
+                    las fechas de nacimiento de las personas mayores de edad.
+                </div>
+                <div>
+                    <b>Nota:</b> El valor por defecto será la fecha limitante, es decir, la fecha de nacimiento de aquellas
+                    personas que acaban de cumplir la mayoría de edad.
+                </div>
+            </div>
+        </div>
+        <div class="offset-lg-2 col-lg-5 card bg-success mb-3">
+            <div class="h4 card-header d-flex align-items-center justify-content-around">
+                <span class="px-1">Resultado del ejercicio 3</span>
+                <button type="button" class="btn btn-outline-success" name="ejercicio3">Pruébalo</button>
+            </div>
+            <div id="resultado3" class="card-body">
+                <div class="d-flex form-group my-2">
+                  <label class="form-label fw-bold my-auto">Fecha de nacimiento:</label>&nbsp;&nbsp;
+                  <input type="date" class="form-control" name="birth_date">
+                </div>
+                <div>
+                    <b>Apunte:</b> En la función para limitar la fecha de nacimiento, se ha creado la constante que representa la
+                    mayoría de edad. En este caso, la mayoría de edad es a los 18, pero si se quiere cambiar, se puede acceder
+                    fácilmente a la constante en el archivo JS.
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

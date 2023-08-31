@@ -1,2 +1,2 @@
-# EjerciciosGuardadosWeb
-Prácticas de programación Web realizadas durante el curso de Adecco
+# InitProgWeb
+Ejercicios de iniciación de programación web refactorizados tras varios cursos de programación

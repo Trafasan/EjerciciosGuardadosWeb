@@ -3,63 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta name="description" content="Repositorio web: Inicio">
-    <meta name="keywords" content="HTML, CSS">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description"
+        content="Ejercicios de iniciación de programación web refactorizados tras varios cursos de programación.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, TypeScript, Bootstrap, Bootswatch">
     <meta name="author" content="Sandra Requena">
-    <title>Repositorio web: Inicio</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/index.css">
+    <meta name="title" property="og:title" content="InitProgWeb">
+    <title>InitProgWeb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/darkly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <p class="actual">Inicio</p>
-        <a href="enlaces/arrays.html" target="_self" class="cambioColor">Arrays</a>
-        <a href="enlaces/formularios.html" target="_self" class="cambioColor">Formularios</a>
-        <a href="enlaces/funciones.html" target="_self" class="cambioColor">Funciones</a>
-        <a href="enlaces/tablas.html" target="_self" class="cambioColor">Tablas</a>
-        <a href="enlaces/extra.html" target="_self" class="cambioColor">Apartados extra</a>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="."><img alt="InitProgWeb" src="img/InitProgWeb.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIPW"
+                aria-controls="navbarIPW" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarIPW">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href=".">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="arrays.html">Arrays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="funciones.html">Funciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tablas.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="extra.html">Apartados extra</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <article>
-        <h2>Bienvenid@ a mi repositorio web</h2>
-        <p class="centrar">
-            He creado esta web para que sirva como repositorio de todas mis prácticas de programación web anteriores
-            al curso de EOI. En cada uno de los enlaces podrás ver ejercicios que realicé durante mi primer curso de
-            programación. Además, he implementado apartados extras que he ido realizando por mi cuenta.
-        </p>
-        <p class="centrar">
-            No obstante, todas estas prácticas no han sido almacenadas tal cual las realicé en su momento, sino que
-            las he ido retocando a medida que realizaba este proyecto personal para aplicar mis nuevos conocimientos
-            adquiridos recientemente.
-        </p>
-    </article>
-    <div>
-        <article id="cv">
-            <h2>Mi CV</h2>
-            <img src="images/miCV.png" alt="Mi CV">
-        </article>
-        <article id="datosContacto">
-            <h2>Datos de contacto</h2>
-            <h3>Pincha sobre los iconos para acceder rápidamente</h3>
-            <p>
-                <a href="https://api.whatsapp.com/send?phone=%2B34601116985&text=Hola%2C+he+visto+tu+repositorio+web" target="_blank"><img src="images/icono_whatsapp.png" alt="Icono Whatsapp"></a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;601 11 69 85
-            </p>
-            <p>
-                <a href="https://github.com/srequenafiliu" target="_blank"><img src="images/icono_github.png" alt="Icono GitHub"></a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;srequenafiliu (Sandra)
-            </p>
-            <p>
-                <a href="https://www.linkedin.com/in/sandra-requena-filiu/" target="_blank"><img src="images/icono_linkedin.png" alt="Icono LinkedIn"></a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sandra Requena Filiu
-            </p>
-            <p>
-                <a href="mailto:sandrarequena1999@gmail.com"><img src="images/icono_email.png" alt="Icono Email"></a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sandrarequena1999@gmail.com
-            </p>
-            <br>
-            <h3>No dudes en contactarme, siempre estoy dispuesta a ayudar</h3>
-            <img src="images/foto_profe.jpg" alt="Mi foto">
-        </article>
+    <div class="offset-1 col-10 row g-0 my-4">
+        <div class="col-12 offset-lg-3 col-lg-6 text-center">
+            <img id="initprogweb" class="w-100" src="img/InitProgWeb.png" alt="InitProgWeb">
+        </div>
+        <div class="col-lg-5 card border-info mb-5 mb-lg-0">
+            <h3 class="card-header text-center">Bienvenid@ a InitProgWeb</h3>
+            <div class="card-body">
+                <p class="card-text">
+                    Esta página web recopila varios ejercicios de iniciación de programación web, los cuales he refactorizado
+                    tras varios cursos de programación. Además, he implementado apartados extras que he realizado por mi cuenta.
+                </p>
+                <p class="card-text">
+                    Los ejercicios están organizados según los siguientes temas:
+                </p>
+            </div>
+            <div id="apartados" class="order-lg-2 carousel slide carousel-fade mb-5 my-lg-auto" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#apartados" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#apartados" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#apartados" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#apartados" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#apartados" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a class="nav-link" href="arrays.html">
+                      <img src="img/arrays.png" class="d-block w-100 rounded-4" alt="Arrays">
+                      <h5 class="carousel-caption">Arrays</h5>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                  <a class="nav-link" href="formularios.html">
+                    <img src="img/formularios.png" class="d-block w-100 rounded-4" alt="Formularios">
+                    <h5 class="carousel-caption">Formularios</h5>
+                  </a>
+                </div>
+                <div class="carousel-item">
+                    <a class="nav-link" href="funciones.html">
+                      <img src="img/funciones.png" class="d-block w-100 rounded-4" alt="Funciones">
+                      <h5 class="carousel-caption">Funciones</h5>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a class="nav-link" href="tablas.html">
+                      <img src="img/tablas.png" class="d-block w-100 rounded-4" alt="Tablas">
+                      <h5 class="carousel-caption">Tablas</h5>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a class="nav-link" href="extra.html">
+                      <img src="img/extra.png" class="d-block w-100 rounded-4" alt="Apartados extra">
+                      <h5 class="carousel-caption">Apartados extra</h5>
+                    </a>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#apartados" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#apartados" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+        </div>
+        <div class="offset-lg-1 col-lg-6 text-center px-5 my-auto">
+            <h3 class="text-info mb-4">Para crear esta web se ha utilizado...</h3>
+            <ul class="list-group fs-5 w-75 mx-auto">
+                <li class="list-group-item border-0">HTML</li>
+                <li class="list-group-item active border-0">CSS</li>
+                <li class="list-group-item border-0">JavaScript</li>
+                <li class="list-group-item active border-0">TypeScript</li>
+                <li class="list-group-item border-0">Bootstrap</li>
+                <li class="list-group-item active border-0">Bootswatch</li>
+              </ul>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

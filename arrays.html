@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description"
+        content="Ejercicios de iniciación de programación web refactorizados tras varios cursos de programación.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, TypeScript, Bootstrap, Bootswatch">
+    <meta name="author" content="Sandra Requena">
+    <meta name="title" property="og:title" content="InitProgWeb | Arrays">
+    <title>InitProgWeb | Arrays</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/darkly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/arrays.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="."><img alt="InitProgWeb" src="img/InitProgWeb.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIPW"
+                aria-controls="navbarIPW" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarIPW">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href=".">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="arrays.html">Arrays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="funciones.html">Funciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tablas.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="extra.html">Apartados extra</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="offset-1 col-10 row g-0 my-4">
+        <div class="col-lg-5 card bg-primary mb-3">
+            <h4 class="card-header text-center">Ejercicio 1</h4>
+            <div class="card-body">
+                <div>
+                    Crea 3 arrays. El primero tendrá 5 números, el segundo se llamará pares y el tercero impares.
+                    Después multiplica cada uno de los números del primer array por un número aleatorio entre el
+                    1 y el 10. Si el resultado es par guarda ese número en el array de pares, y si es impar, lo
+                    guarda en el array de impares. Mostrar:
+                </div>
+                <ul>
+                    <li>La multiplicación que se produce junto con su resultado con el formato 2 x 3 = 6</li>
+                    <li>El array de pares e impares</li>
+                </ul>
+            </div>
+        </div>
+        <div class="offset-lg-2 col-lg-5 card bg-success mb-3">
+            <div class="h4 card-header d-flex align-items-center justify-content-around">
+                <span class="px-1">Resultado del ejercicio 1</span>
+                <button type="button" class="btn btn-outline-success" name="ejercicio1">Pruébalo</button>
+            </div>
+            <div id="resultado1" class="card-body">
+            </div>
+        </div>
+        <div class="col-lg-5 card bg-primary mb-3">
+            <h4 class="card-header text-center">Ejercicio 2</h4>
+            <div class="card-body">
+                Solicita al usuario una palabra y mostrar por consola el número de consonantes, vocales y longitud de la palabra.
+            </div>
+        </div>
+        <div class="offset-lg-2 col-lg-5 card bg-success mb-3">
+            <div class="h4 card-header d-flex align-items-center justify-content-around">
+                <span class="px-1">Resultado del ejercicio 2</span>
+                <button type="button" class="btn btn-outline-success" name="ejercicio2">Pruébalo</button>
+            </div>
+            <div id="resultado2" class="card-body">
+            </div>
+        </div>
+        <div class="col-lg-5 card bg-primary mb-3">
+            <h4 class="card-header text-center">Ejercicio 3</h4>
+            <div class="card-body">
+                Dado un array que contiene <code class="text-white">[“azul”, “amarillo”, “rojo”, “verde”, “rosa”]</code>,
+                determinar si un color introducido por el usuario a través de un prompt se encuentra dentro de un array o no.
+            </div>
+        </div>
+        <div class="offset-lg-2 col-lg-5 card bg-success mb-3">
+            <div class="h4 card-header d-flex align-items-center justify-content-around">
+                <span class="px-1">Resultado del ejercicio 3</span>
+                <button type="button" class="btn btn-outline-success" name="ejercicio3">Pruébalo</button>
+            </div>
+            <div id="resultado3" class="card-body">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

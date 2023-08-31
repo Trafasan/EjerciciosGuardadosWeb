@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <meta name="description"
+        content="Ejercicios de iniciación de programación web refactorizados tras varios cursos de programación.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, TypeScript, Bootstrap, Bootswatch">
+    <meta name="author" content="Sandra Requena">
+    <meta name="title" property="og:title" content="InitProgWeb | Formularios: Ejercicio 2">
+    <title>InitProgWeb | Formularios: Ejercicio 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/darkly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/formularios_ej2.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../."><img alt="InitProgWeb" src="../img/InitProgWeb.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIPW"
+                aria-controls="navbarIPW" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarIPW">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../.">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../arrays.html">Arrays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../funciones.html">Funciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../tablas.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../extra.html">Apartados extra</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="offset-1 col-10 row g-0 mt-4">
+        <div class="d-flex justify-content-center">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="ejercicio_1.html">&laquo;</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="ejercicio_1.html">1</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="ejercicio_2.html">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="ejercicio_3.html">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="ejercicio_3.html">&raquo;</a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-lg-5 p-lg-3 mb-3">
+            <div class="card bg-primary h-100">
+                <div class="h4 card-header d-flex align-items-center justify-content-around">
+                    <span class="px-1">Ejercicio 2</span>
+                    <a class="btn btn-outline-info" href="../formularios.html">Volver atrás</a>
+                </div>
+                <div class="card-body">
+                    <div>Crear una página en la que se mostrarán una lista de elementos y dos botones:</div>
+                    <ul>
+                        <li>
+                            <b>Añadir:</b> Al pulsarlo, se dará de alta un nuevo elemento en la lista y se solicitará el
+                            texto a introducir.
+                        </li>
+                        <li>
+                            <b>Eliminar:</b> Al pulsarlo, se eliminará el último nodo. La lista siempre tendrá al menos
+                            un nodo en ella.
+                        </li>
+                    </ul>
+                    <div>
+                        <b>Nota:</b> El texto del nuevo elemento se introducirá mediante un textarea, que estará dentro de un formulario.
+                        Para que se introduzca el elemento, el usuario deberá enviar el formulario. Dicho formulario solo será visible cuando
+                        se pulse el botón <i>Añadir</i> y se ocultará cuando se envíe el formulario.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offset-lg-2 col-lg-5 p-lg-3 mb-3">
+            <div class="card bg-warning h-100">
+                <h4 class="card-header text-center">Formulario</h4>
+                <div class="card-body">
+                    <div>
+                        Pulsa un botón para &nbsp;<button class="btn btn-success">Añadir</button>&nbsp; o
+                        &nbsp;<button class="btn btn-danger">Eliminar</button>&nbsp; un elemento a la lista.
+                    </div>
+                    <div id="resultado" class="row g-0">
+                        <ol class="col-lg-7 mt-3 mt-md-0 ps-3">
+                            <li>Dato inicial</li>
+                            <li>Dato inicial</li>
+                            <li>Dato inicial</li>
+                            <li>Dato inicial</li>
+                        </ol>
+                        <form action="#" class="col-lg-5 d-none text-center">
+                            <div class="form-group">
+                              <label class="form-label">Introduzca el texto:</label>
+                              <textarea class="form-control"></textarea>
+                            </div>
+                            <button class="btn btn-success mt-2" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

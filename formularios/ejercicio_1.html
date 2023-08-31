@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <meta name="description"
+        content="Ejercicios de iniciación de programación web refactorizados tras varios cursos de programación.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, TypeScript, Bootstrap, Bootswatch">
+    <meta name="author" content="Sandra Requena">
+    <meta name="title" property="og:title" content="InitProgWeb | Formularios: Ejercicio 1">
+    <title>InitProgWeb | Formularios: Ejercicio 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/darkly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/formularios_ej1.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../."><img alt="InitProgWeb" src="../img/InitProgWeb.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIPW"
+                aria-controls="navbarIPW" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarIPW">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../.">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../arrays.html">Arrays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../funciones.html">Funciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../tablas.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../extra.html">Apartados extra</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="offset-1 col-10 row g-0 mt-4">
+        <div class="d-flex justify-content-center">
+            <ul class="pagination">
+              <li class="page-item disabled">
+                <a class="page-link">&laquo;</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="ejercicio_1.html">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="ejercicio_2.html">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="ejercicio_3.html">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="ejercicio_2.html">&raquo;</a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-lg-4 p-lg-3 mb-3">
+            <div class="card bg-primary h-100">
+                <div class="h4 card-header d-flex align-items-center justify-content-around">
+                    <span class="px-1">Ejercicio 1</span>
+                    <a class="btn btn-outline-info" href="../formularios.html">Volver atrás</a>
+                </div>
+                <div class="card-body">
+                    <div>
+                        Crea una página html con un formulario para obtener información personal sobre un usuario,
+                        los campos a incluir son los siguientes:
+                    </div>
+                    <ol>
+                        <li>Nombre</li>
+                        <li>Dirección</li>
+                        <li>NIF, comprobar que el documento introducido sea correcto.</li>
+                        <li>Fecha de nacimiento con formato dd/mm/aaaa.</li>
+                        <li>Código postal (numérico)</li>
+                        <li>País, será una lista con 6 paises.</li>
+                        <li>Género, será un <i>radiobutton</i> con tres opciones.<br>
+                            Esta tercera opción se debe a que el usuario puede que no quiera decir su género por diversos motivos.</li>
+                        <li>Preferencias, tendrás 3 checkbox a elegir con tres colores.</li>
+                        <li>Teléfono de 9 dígitos y numérico.</li>
+                        <li>E-Mail</li>
+                        <li>Contraseña</li>
+                        <li>Verificación de la contraseña</li>
+                    </ol>
+                    <div>
+                        <b>Nota:</b> Todos los campos son requeridos excepto el de las preferencias. Esto se debe a que se debe pulsar
+                        obligatoriamente el checkbox que se requiere aunque se hayan pulsado otros.
+                    </div>
+                    <div>
+                        El formulario tendrá dos botones <i>Enviar</i> y <i>Borrar</i>, al pulsar <i>Enviar</i> la página
+                        mostrará la información que el usuario ha escrito. Para realizar el envío del formulario todos los
+                        campos deben de ser correctos. Los campos que no sean correctos se marcarán en rojo.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 p-lg-3 mb-3">
+            <div class="card bg-warning h-100">
+                <h4 class="card-header text-center">Formulario</h4>
+                <form action="#" class="card-body text-black">
+                    <div class="d-flex form-group mb-2">
+                      <label class="form-label fw-bold my-auto">Nombre:</label>&nbsp;&nbsp;
+                      <input type="text" class="form-control form-control-sm" name="name">
+                    </div>
+                    <div class="d-flex form-group my-2">
+                      <label class="form-label fw-bold my-auto">Apellido(s):</label>&nbsp;&nbsp;
+                      <input type="text" class="form-control form-control-sm" name="surname">
+                    </div>
+                    <div class="d-flex form-group my-2">
+                      <label class="form-label fw-bold my-auto">Dirección:</label>&nbsp;&nbsp;
+                      <input type="text" class="form-control form-control-sm" name="address">
+                    </div>
+                    <div class="d-flex form-group my-2">
+                      <label class="form-label fw-bold my-auto">NIF:</label>&nbsp;&nbsp;
+                      <input type="text" class="form-control form-control-sm" name="nif">
+                    </div>
+                    <div class="d-flex form-group my-2">
+                      <label class="form-label fw-bold my-auto">Fecha de nacimiento:</label>&nbsp;&nbsp;
+                      <input type="date" class="form-control form-control-sm" name="date_of_birth">
+                    </div>
+                    <div class="d-flex form-group my-2">
+                      <label class="form-label fw-bold my-auto">Código postal:</label>&nbsp;&nbsp;
+                      <input type="text" class="form-control form-control-sm" name="postal_code">
+                    </div>
+                    <div class="d-flex form-group my-2">
+                      <label class="form-label fw-bold my-auto">País:</label>&nbsp;&nbsp;
+                      <select class="form-select form-select-sm" name="country">
+                        <option value="" hidden>-Elija un país-</option>
+                        <option value="esp">España</option>
+                        <option value="fra">Francia</option>
+                        <option value="ale">Alemania</option>
+                        <option value="uk">Reino Unido</option>
+                        <option value="irl">Irlanda</option>
+                        <option value="pol">Polonia</option>
+                      </select>
+                    </div>
+                    <div class="row g-0 my-2">
+                        <label class="col-12 fw-bold">Género:</label>
+                        <div class="offset-1 col-md-5 col-lg-10 form-check">
+                            <input class="form-check-input" type="radio" value="nc" name="gender" id="gender-nc">
+                            <label class="form-check-label" for="gender-nc">&nbsp; Prefiero no responder</label>
+                        </div>
+                        <div class="offset-1 offset-md-0 col-md-3 offset-lg-1 col-lg-5 form-check">
+                            <input class="form-check-input" type="radio" value="m" name="gender" id="gender-m">
+                            <label class="form-check-label" for="gender-m">&nbsp; Masculino</label>
+                        </div>
+                        <div class="offset-1 offset-md-0 col-md-3 col-lg-5 form-check">
+                            <input class="form-check-input" type="radio" value="f" name="gender" id="gender-f">
+                            <label class="form-check-label" for="gender-f">&nbsp; Femenino</label>
+                        </div>
+                    </div>
+                    <div class="row g-0 my-2">
+                        <label class="col-12 fw-bold">Preferencias:</label>
+                        <div class="offset-1 col-3 form-check">
+                            <input class="form-check-input" type="checkbox" value="Rojo" name="colors" id="pref-rojo">
+                            <label class="form-check-label" for="pref-rojo">&nbsp; Rojo</label>
+                        </div>
+                        <div class="col-3 form-check">
+                            <input class="form-check-input" type="checkbox" value="Azul" name="colors" id="pref-azul">
+                            <label class="form-check-label" for="pref-azul">&nbsp; Azul</label>
+                        </div>
+                        <div class="col-5 form-check">
+                            <input class="form-check-input" type="checkbox" value="Verde" name="colors" id="pref-verde">
+                            <label class="form-check-label" for="pref-verde">&nbsp; Verde</label>
+                        </div>
+                    </div>
+                    <div class="d-flex form-group my-2">
+                      <label class="form-label fw-bold my-auto">Teléfono:</label>&nbsp;&nbsp;
+                      <input type="tel" class="form-control form-control-sm" name="phone_number">
+                    </div>
+                    <div class="d-flex form-group my-2">
+                      <label class="form-label fw-bold my-auto">Correo electrónico:</label>&nbsp;&nbsp;
+                      <input type="email" class="form-control form-control-sm" name="mail">
+                    </div>
+                    <div class="d-flex form-group my-2">
+                      <label class="form-label fw-bold my-auto">Contraseña:</label>&nbsp;&nbsp;
+                      <input type="password" class="form-control form-control-sm" name="password">
+                    </div>
+                    <div class="d-flex form-group my-2">
+                      <label class="form-label fw-bold my-auto">Confirme la contraseña:</label>&nbsp;&nbsp;
+                      <input type="password" class="form-control form-control-sm" name="c_password">
+                    </div>
+                    <div class="text-end mt-2">
+                        <button type="reset" class="btn btn-danger">Borrar</button>
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-4 p-lg-3 mb-3 my-lg-auto">
+            <div class="card bg-success">
+                <h4 class="card-header text-center">Datos del formulario</h4>
+                <div id="resultado" class="card-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

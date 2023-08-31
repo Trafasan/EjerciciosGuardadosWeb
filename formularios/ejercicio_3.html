@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <meta name="description"
+        content="Ejercicios de iniciación de programación web refactorizados tras varios cursos de programación.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, TypeScript, Bootstrap, Bootswatch">
+    <meta name="author" content="Sandra Requena">
+    <meta name="title" property="og:title" content="InitProgWeb | Formularios: Ejercicio 3">
+    <title>InitProgWeb | Formularios: Ejercicio 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/darkly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/formularios_ej3.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../."><img alt="InitProgWeb" src="../../img/InitProgWeb.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIPW"
+                aria-controls="navbarIPW" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarIPW">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../.">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../arrays.html">Arrays</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../formularios.html">Formularios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../funciones.html">Funciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../tablas.html">Tablas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../extra.html">Apartados extra</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="offset-1 col-10 row g-0 mt-4">
+        <div class="d-flex justify-content-center">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="ejercicio_2.html">&laquo;</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="ejercicio_1.html">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="ejercicio_2.html">2</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="ejercicio_3.html">3</a>
+              </li>
+              <li class="page-item disabled">
+                <a class="page-link">&raquo;</a>
+              </li>
+            </ul>
+        </div>
+        <div class="col-lg-5 p-lg-3 mb-3">
+            <div class="card bg-primary h-100">
+                <div class="h4 card-header d-flex align-items-center justify-content-around">
+                    <span class="px-1">Ejercicio 3</span>
+                    <a class="btn btn-outline-info" href="../formularios.html">Volver atrás</a>
+                </div>
+                <div class="card-body">
+                    <div>Realiza una página web que contenga dos o más párrafos, contendrá también:</div>
+                    <ul>
+                        <li>Input de tipo text para introducir el id del párrafo a modificar</li>
+                        <li>3 botones:
+                            <ul>
+                                <li>
+                                    <b>Agrandar:</b> Ampliará el tamaño del párrafo seleccionado en 0.05em hasta un máximo de 2em.
+                                </li>
+                                <li>
+                                    <b>Reducir:</b> Reducirá el tamaño del párrafo seleccionado en 0.05em hasta un mínimo de 0.9em.
+                                </li>
+                                <li><b>Original:</b> Restablecerá el tamaño al tamaño original.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div>
+                        <b>Apunte:</b> El tamaño de la fuente predeterminado de los párrafos es 1em. Sin embargo,
+                        si se quiere sacar ese valor mediante JavaScript, aparecerá vacío.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offset-lg-2 col-lg-5 p-lg-3 mb-3">
+            <div class="card bg-warning h-100">
+                <h4 class="card-header text-center">Formulario</h4>
+                <div id="parrafos" class="card-body">
+                    <div class="mb-2">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto vitae accusamus nulla recusandae sit
+                        impedit error earum velit, ex eum!
+                    </div>
+                    <div class="my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusantium harum illum laborum nulla.
+                        Sapiente veniam libero quis expedita. Blanditiis.
+                    </div>
+                    <div class="my-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam possimus culpa dolores sapiente
+                        repudiandae? Eveniet accusamus nam fuga quis consectetur?
+                    </div>
+                    <div class="mt-2">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero illum, reiciendis debitis nulla est modi
+                        et ratione temporibus recusandae molestias.
+                    </div>
+                    <form action="#" class="row g-0 mt-3">
+                        <div class="col-md-6 form-group mb-2 my-md-auto">
+                          <div class="input-group">
+                            <span class="input-group-text">Id párrafo</span>
+                            <input type="number" class="form-control">
+                          </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <button class="btn btn-success">Agrandar</button>
+                            <button class="btn btn-danger">Reducir</button>
+                            <button class="btn btn-primary">Original</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

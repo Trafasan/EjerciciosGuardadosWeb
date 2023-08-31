@@ -130,17 +130,15 @@ function eliminarTabla() {
 }
   
 function addMargenes() {
-    for (let elemento of document.querySelectorAll("td")) elemento.style.border = "2px solid black";
+    let elementos:NodeListOf<HTMLElement> = document.querySelectorAll("td:not(.bg-warning, .bg-info)");
+    for (let elemento of elementos) elemento.style.border = "2px solid black";
     (<HTMLButtonElement> document.getElementById('add')).setAttribute('hidden', "true");
     (<HTMLButtonElement> document.getElementById('remove')).removeAttribute('hidden');
     (<HTMLButtonElement> document.querySelector('button[name="eliminar"]')).setAttribute('hidden', "true");
 }
   
 function quitarMargenes() {
-    for (let elemento of document.querySelectorAll("td")) elemento.style.border = "initial";
-    let elementos:string = "table, thead, th, td:first-child, td.bg-warning, td.bg-info";
-    let elemento_borde:NodeListOf<HTMLTableCellElement> = document.querySelectorAll(elementos);
-    for (let elemento of elemento_borde) elemento.style.border = "2px solid black";
+    for (let elemento of document.querySelectorAll("td:not(.bg-warning, .bg-info)")) elemento.removeAttribute("style");
     (<HTMLButtonElement> document.getElementById('add')).removeAttribute('hidden');
     (<HTMLButtonElement> document.getElementById('remove')).setAttribute('hidden', "true");
     (<HTMLButtonElement> document.querySelector('button[name="eliminar"]')).removeAttribute('hidden');

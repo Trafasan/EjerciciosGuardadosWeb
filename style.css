@@ -11,15 +11,15 @@
 .form-control::placeholder {
     color: rgba(34, 34, 34, 0.75);
 }
-table{
+table {
     border-collapse: collapse;
 }
-table, thead, th, td:first-child, td.bg-warning, td.bg-info{
-    border: 2px solid black;
+table, thead, th, td.bg-warning, td.bg-info {
+    border: 2px solid black !important;
 }
-table div.fw-bolder{
+table div.fw-bolder {
     font-size: 1.2em;
 }
-table div.text-end{
+table div.text-end {
     font-size: 0.8em;
 }

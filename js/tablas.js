@@ -125,19 +125,16 @@ function eliminarTabla() {
     document.getElementById('add').setAttribute('hidden', "true");
 }
 function addMargenes() {
-    for (let elemento of document.querySelectorAll("td"))
+    let elementos = document.querySelectorAll("td:not(.bg-warning, .bg-info)");
+    for (let elemento of elementos)
         elemento.style.border = "2px solid black";
     document.getElementById('add').setAttribute('hidden', "true");
     document.getElementById('remove').removeAttribute('hidden');
     document.querySelector('button[name="eliminar"]').setAttribute('hidden', "true");
 }
 function quitarMargenes() {
-    for (let elemento of document.querySelectorAll("td"))
-        elemento.style.border = "initial";
-    let elementos = "table, thead, th, td:first-child, td.bg-warning, td.bg-info";
-    let elemento_borde = document.querySelectorAll(elementos);
-    for (let elemento of elemento_borde)
-        elemento.style.border = "2px solid black";
+    for (let elemento of document.querySelectorAll("td:not(.bg-warning, .bg-info)"))
+        elemento.removeAttribute("style");
     document.getElementById('add').removeAttribute('hidden');
     document.getElementById('remove').setAttribute('hidden', "true");
     document.querySelector('button[name="eliminar"]').removeAttribute('hidden');
